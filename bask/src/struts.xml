@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default" >
+		
+		
+		<action name="register_insert" class="bk.action.BkAction" method="insert">
+			<result name="insert">Bi/index.jsp</result>
+		</action>
+		<action name="logon" class="bk.action.BkAction" method="logon">
+			<result name="yes">Bi/myteam.jsp</result>
+			<result name="no">Bi/logonno.jsp</result>
+			<result name="noid">Bi/logonnoid.jsp</result>
+		</action>
+		<action name="signup" class="bk.action.BkAction" method="add">
+			<result name="add">Bi/myteam.jsp</result>
+		</action>
+		<action name="form1" class="bk.action.BkAction" method="form1">
+			<result name="form1">Bi/index.jsp</result>
+		</action>
+		</package>
+</struts>    
