@@ -1,0 +1,14 @@
+E:\D盘\私活\后台模版\HTweb\Common\bin\Debug\Common.dll
+E:\D盘\私活\后台模版\HTweb\Common\bin\Debug\Common.pdb
+E:\D盘\私活\后台模版\HTweb\Common\bin\Debug\log4net.dll
+E:\D盘\私活\后台模版\HTweb\Common\bin\Debug\NPOI.dll
+E:\D盘\私活\后台模版\HTweb\Common\obj\Debug\Common.dll
+E:\D盘\私活\后台模版\HTweb\Common\obj\Debug\Common.pdb
+E:\D盘\私活\后台模版\HTweb\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\bin\Debug\Common.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\bin\Debug\Common.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\bin\Debug\log4net.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\bin\Debug\NPOI.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\obj\Debug\Common.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\Common\obj\Debug\Common.pdb
