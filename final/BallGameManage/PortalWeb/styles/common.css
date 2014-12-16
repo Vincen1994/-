@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* common css */
+#container { width:1002px;  margin:0 auto;}
+/** header css start **/
+#header{height:262px;}
+#menu{ height:42px; background:url(../img/images/menu-bg.png) repeat-x; padding-right:9px; padding-left:20px;}
+.menu-list{ float:left; height:28px; padding-top:16px;}
+.menu-list .menu-list-child{ float:left; background:url(../img/images/menu-list-bg.png) center right no-repeat;padding-right:14px; padding-left:13px; position:relative;}
+
+.menu-list-child div{ display:none; position:absolute; width:600px; z-index:5; top:30px; left:-30px;}
+.menu-list-child li{float:left; background:url(../img/images/menu-list-bg.png) center right no-repeat;padding-right:14px; padding-left:13px;}
+
+.div_list
+{
+    margin-left:10px;
+    }
+
+.menu-list li a{ display:block;}
+.menu-list li a img{ vertical-align:middle;}
+.menu-list .menu-last{ background:none;}
+.date{ width:184px; height:31px; background:url(../img/images/search-bg.png) no-repeat; float:right; margin-top:7px; text-align:center; line-height:31px;}
+/** header css end **/
+#footer{ background:#0350A5; height:60px; margin-top:18px; text-align:center; color:#FFF; font-size:14px; padding-top:16px;}

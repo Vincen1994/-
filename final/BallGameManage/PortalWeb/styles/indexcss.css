@@ -1,0 +1,22 @@
+﻿.page_nav1,.page_nav2,.page_nav3,.page_nav4,.page_nav5{
+	border:none;
+	cursor:pointer;
+	width:55px;
+	height:20px;
+}
+.page_nav1{
+	background:url(img/page_nav_03.gif) no-repeat;
+	width:20px;
+}
+.page_nav2{
+	background:url(img/page_nav_05.gif) no-repeat;
+}
+.page_nav3{
+	background:url(img/page_nav_07.gif) no-repeat;
+}
+.page_nav4{
+	background:url(img/page_nav_09.gif) no-repeat;
+}
+.page_nav5{
+	background:url(img/page_nav_11.gif) no-repeat;
+}

@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="BallGameManage.Main.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>光熙杯篮球赛</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script src="../scripts/move.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var initializationTime = (new Date()).getTime();
+        function showLeftTime() {
+            var now = new Date();
+            var year = now.getYear();
+            if (year<1900) {
+                year += 1900;
+            }
+            var month = now.getMonth();
+            var day = now.getDate();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            document.all.show.innerHTML = "" + year + "年" + month + "月" + day + "日 " + hours + "时" + minutes + "分" + seconds + "秒";
+            //一秒刷新一次显示时间
+            var timeID = setTimeout(showLeftTime, 1000);
+        }
+
+        function Open(url) {
+            window.open(url);
+        }
+</script>
+</head>
+<body style="height: 900px"  onload="showLeftTime()">
+    <form id="form1" runat="server">
+    <div id="container" style="height: 900px;">
+        <!-- header start -->
+        <div id="header">
+            <div class="banner">
+                <img src="../img/images/header.jpg"></div>
+            <div id="menu">
+                <ul class="menu-list">
+                        <li class="menu-list-child"><a href="Index.aspx" title="首页">首页
+                            </a> </li>
+                        <li class="menu-list-child"><a href="NewList.aspx" title="新闻公告">新闻公告
+                            </a> </li>
+                        <li class="menu-list-child"><a href="Memberlist.aspx" title="赛程安排">赛程安排
+                            </a> </li>
+                        <li class="menu-list-child"><a href="Economylist.aspx" title="比赛情况">比赛情况
+                            </a> </li>
+                        <li class="menu-list-child"><a href="Proceedingslist.aspx?type=one" title="精彩图片">精彩片段
+                            </a> </li>
+                             <li class="menu-list-child"><a href="Proceedingslist.aspx?type=two" title="精彩图片">绝杀时刻
+                            </a> </li>
+                     
+                    </ul>
+                <span id="show" class="date"></span>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- content start --->
+        <div id="content" style="width: 100%; margin-top: 10px;">
+            <div style="width:100%; float: left;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- content end --->
+         <div id="footer">
+                   <br />
+                   
+            </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{
+border:medium none;
+margin: 0;
+padding: 0;
+}
+
+
+
+/**************商会纵横图片轮换设置*****************/
+.slide_wrap{position:relative;width:270px;height:180px; margin-bottom:5px;background:#fff;color:#666;overflow:hidden;z-index:1;
+    top: 0px;
+    left: -2px;
+}
+.slide_imglist{}
+.slide_imglist li{float:left;margin-right:3px;display:inline;}
+
+.slide_imglist li img{width:270px;height:180px;display:block;}
+
+.slide_title{bottom:0;left:0;width:100%;height:19px;position:absolute; overflow:hidden;background:#6C6C6C; }
+
+.slide_title em{position:absolute;left:0;display:block;top:0;width:100%;height:20px;z-index:2;}
+.slide_num{right:0px;z-index:3;top:0;position:absolute; }
+.slide_num dd{display:inline;margin:0px 4px 0 0;width:23px;height:17px;font-size:12px; line-height:17px;text-align:center;border:1px #fff 
+
+solid;background:#d4d4d4;cursor:pointer;float:left;}
+.slide_num dd.active{color:#fff;border:1px #09f solid;background:#F00;}

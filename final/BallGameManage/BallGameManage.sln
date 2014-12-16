@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bll", "bll\Bll.csproj", "{9C39CB8A-A66E-49EE-8557-964802EFE406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "dal\Dal.csproj", "{BC09737D-E015-4BCE-99AD-120625048DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{08876A57-E0FE-4BF4-AD06-ABE114C620AB}"
+	ProjectSection(SolutionItems) = preProject
+		lib\Interop.SHDocVw.dll = lib\Interop.SHDocVw.dll
+		lib\log4net.dll = lib\log4net.dll
+		lib\NPOI.dll = lib\NPOI.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallGameManage", "PortalWeb\BallGameManage.csproj", "{98839052-4335-480D-B13B-C4EED09142F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{FBB6127E-1B3F-44F6-9672-77681B73E303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C39CB8A-A66E-49EE-8557-964802EFE406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C39CB8A-A66E-49EE-8557-964802EFE406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C39CB8A-A66E-49EE-8557-964802EFE406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C39CB8A-A66E-49EE-8557-964802EFE406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC09737D-E015-4BCE-99AD-120625048DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC09737D-E015-4BCE-99AD-120625048DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC09737D-E015-4BCE-99AD-120625048DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC09737D-E015-4BCE-99AD-120625048DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98839052-4335-480D-B13B-C4EED09142F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98839052-4335-480D-B13B-C4EED09142F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98839052-4335-480D-B13B-C4EED09142F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98839052-4335-480D-B13B-C4EED09142F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB6127E-1B3F-44F6-9672-77681B73E303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB6127E-1B3F-44F6-9672-77681B73E303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB6127E-1B3F-44F6-9672-77681B73E303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB6127E-1B3F-44F6-9672-77681B73E303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

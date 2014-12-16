@@ -1,0 +1,17 @@
+E:\D盘\私活\后台模版\HTweb\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\WebApplication1.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\WebApplication1.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\bll.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Common.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Core.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\dal.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Entity.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\NPOI.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\log4net.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\bll.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Common.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Core.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\dal.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\bin\Entity.pdb
+E:\D盘\私活\后台模版\HTweb\WebApplication1\obj\Debug\WebApplication1.dll
+E:\D盘\私活\后台模版\HTweb\WebApplication1\obj\Debug\WebApplication1.pdb

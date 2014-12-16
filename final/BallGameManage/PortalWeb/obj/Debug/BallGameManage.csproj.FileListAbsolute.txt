@@ -1,0 +1,17 @@
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\WebApplication1.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\WebApplication1.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\bll.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Common.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Core.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\dal.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Entity.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\NPOI.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\log4net.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\bll.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Common.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Core.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\dal.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\bin\Entity.pdb
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\obj\Debug\BallGameManage.csprojResolveAssemblyReference.cache
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\obj\Debug\WebApplication1.dll
+E:\D盘\私活\篮球赛管理系统\BallGameManage\PortalWeb\obj\Debug\WebApplication1.pdb

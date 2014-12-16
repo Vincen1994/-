@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* reset css */
+
+/* 清除内置内边框跟外边框*/
+* {padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{ font-size:12px;}
+body { font-size:12px; font-family:"微软雅黑";}
+ul,ol li {list-style:none;}
+a img {border:none;}
+a {text-decoration:none; color:#333;}
+.clear:after{content:'';display:block;clear:both;}
+.clear{zoom:1;}

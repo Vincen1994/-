@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+
+  <appender name="OperationLog" type="log4net.Appender.AdoNetAppender">
+    <bufferSize value="1" />
+    <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <connectionString value="Data Source=.;Initial Catalog=webHT;User ID=sa;Password=sa;"/>
+    <commandText value="INSERT INTO T_BaseOperationLog ([F_LogId],[F_User],[F_Level],[F_Content],[F_CreateTime]) VALUES (@logId, @user, @level, @content, @createTime)"/>
+    <parameter>
+      <parameterName value="@logId"/>
+      <dbType value="String"/>
+      <size value="50"/>
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%property{logId}" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@user"/>
+      <dbType value="String"/>
+      <size value="50"/>
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%property{user}" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@level"/>
+      <dbType value="String"/>
+      <size value="10"/>
+      <layout type="log4net.Layout.PatternLayout" value="%level"/>
+    </parameter>
+    <parameter>
+      <parameterName value="@content"/>
+      <dbType value="String"/>
+      <size value="8000"/>
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%message" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@createTime"/>
+      <dbType value="DateTime"/>
+      <layout type="log4net.Layout.RawTimeStampLayout" />
+    </parameter>
+  </appender>
+
+  <appender name="SystemLog" type="log4net.Appender.AdoNetAppender">
+    <bufferSize value="1" />
+    <connectionType value="System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+    <connectionString value="Data Source=.;Initial Catalog=webHT;User ID=sa;Password=sa;" />
+    <commandText value="INSERT INTO T_BaseSystemLog ([F_LogId],[F_MenuId],[F_Identity],[F_Content],[F_AccessTime]) VALUES (@logId, @menuId, @identity, @content, @accessTime)" />
+    <parameter>
+      <parameterName value="@logId" />
+      <dbType value="String" />
+      <size value="50" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%property{logId}" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@menuId" />
+      <dbType value="String" />
+      <size value="50" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%property{menuId}" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@identity" />
+      <dbType value="String" />
+      <size value="50" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%property{identity}" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@content" />
+      <dbType value="String" />
+      <size value="8000" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%message" />
+      </layout>
+    </parameter>
+    <parameter>
+      <parameterName value="@accessTime" />
+      <dbType value="DateTime" />
+      <layout type="log4net.Layout.RawTimeStampLayout" />
+    </parameter>
+  </appender>
+
+  <logger name="OperationLog">
+    <level value="ALL" />
+    <appender-ref ref="OperationLog" />
+  </logger>
+
+  <logger name="SystemLog">
+    <level value="ALL" />
+    <appender-ref ref="SystemLog" />
+  </logger>
+
+  <root>
+    <level value="OFF" />
+  </root>
+
+</log4net>

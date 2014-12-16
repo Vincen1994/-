@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98839052-4335-480D-B13B-C4EED09142F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BallGameManage</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\addAdmin.aspx" />
+    <Content Include="Administrator\addImage.aspx" />
+    <Content Include="Administrator\addNews.aspx" />
+    <Content Include="Administrator\Default.aspx" />
+    <Content Include="Administrator\addMatch.aspx" />
+    <Content Include="Administrator\Matching.aspx" />
+    <Content Include="Administrator\ScheduleList.aspx" />
+    <Content Include="Administrator\login.aspx" />
+    <Content Include="Administrator\selectdAdmin.aspx" />
+    <Content Include="Administrator\selectedNews.aspx" />
+    <Content Include="Administrator\selectImage.aspx" />
+    <Content Include="Administrator\selectLaboratory.aspx" />
+    <Content Include="Administrator\UpdateAdmin.aspx" />
+    <Content Include="Administrator\UpdateNews.aspx" />
+    <Content Include="Administrator\addLaboratory.aspx" />
+    <Content Include="Administrator\addSchedule.aspx" />
+    <Content Include="Administrator\MatchList.aspx" />
+    <Content Include="ErrorPage.htm" />
+    <Content Include="img\avatar.png" />
+    <Content Include="img\bg_body_left.png" />
+    <Content Include="img\bg_breadcrumb.png" />
+    <Content Include="img\bg_btn_grey_lrg.png" />
+    <Content Include="img\bg_btn_grey_sml.png" />
+    <Content Include="img\bg_fade_blue_med.png" />
+    <Content Include="img\bg_fade_green_med.png" />
+    <Content Include="img\bg_fade_green_sml.png" />
+    <Content Include="img\bg_fade_med.png" />
+    <Content Include="img\bg_fade_red_med.png" />
+    <Content Include="img\bg_fade_red_sml.png" />
+    <Content Include="img\bg_fade_sml.png" />
+    <Content Include="img\bg_fade_up.png" />
+    <Content Include="img\bg_fade_yellow_med.png" />
+    <Content Include="img\bg_footer.png" />
+    <Content Include="img\bg_forgotten_password.png" />
+    <Content Include="img\bg_grey_dark_med.png" />
+    <Content Include="img\bg_header.png" />
+    <Content Include="img\bg_heading.png" />
+    <Content Include="img\bg_leftside.png" />
+    <Content Include="img\bg_left_spacer.png" />
+    <Content Include="img\bg_login_box.png" />
+    <Content Include="img\bg_login_header.png" />
+    <Content Include="img\bg_login_page.png" />
+    <Content Include="img\bg_navigation_link.png" />
+    <Content Include="img\bg_noticebox_grey.png" />
+    <Content Include="img\bg_noticebox_yellow.png" />
+    <Content Include="img\bg_td_alt.png" />
+    <Content Include="img\bg_th.png" />
+    <Content Include="img\bg_usage_green.png" />
+    <Content Include="img\bg_usage_orange.png" />
+    <Content Include="img\bg_usage_red.png" />
+    <Content Include="img\cp_logo.png" />
+    <Content Include="img\Default.jpg" />
+    <Content Include="img\header.jpg" />
+    <Content Include="img\icons\add.png" />
+    <Content Include="img\icons\icoCircle.gif" />
+    <Content Include="img\icons\icoLeft.gif" />
+    <Content Include="img\icons\icon_approve.png" />
+    <Content Include="img\icons\icon_breadcrumb.png" />
+    <Content Include="img\icons\icon_bullet.png" />
+    <Content Include="img\icons\icon_cross_sml.png" />
+    <Content Include="img\icons\icon_delete.png" />
+    <Content Include="img\icons\icon_edit.png" />
+    <Content Include="img\icons\icon_error.png" />
+    <Content Include="img\icons\icon_info.png" />
+    <Content Include="img\icons\icon_missing.png" />
+    <Content Include="img\icons\icon_square_close.png" />
+    <Content Include="img\icons\icon_success.png" />
+    <Content Include="img\icons\icon_ticklist.png" />
+    <Content Include="img\icons\icon_unapprove.png" />
+    <Content Include="img\icons\icon_warning.png" />
+    <Content Include="img\icons\icoRight.gif" />
+    <Content Include="img\icons\sport_basketball.png" />
+    <Content Include="img\images\banner.png" />
+    <Content Include="img\images\content-bg.png" />
+    <Content Include="img\images\content-t-list-bg.png" />
+    <Content Include="img\images\content-title-bg.png" />
+    <Content Include="img\images\header.jpg" />
+    <Content Include="img\images\left.png" />
+    <Content Include="img\images\menu-bg.png" />
+    <Content Include="img\images\menu-list-1.png" />
+    <Content Include="img\images\menu-list-2.png" />
+    <Content Include="img\images\menu-list-3.png" />
+    <Content Include="img\images\menu-list-4.png" />
+    <Content Include="img\images\menu-list-5.png" />
+    <Content Include="img\images\menu-list-6.png" />
+    <Content Include="img\images\menu-list-7.png" />
+    <Content Include="img\images\menu-list-8.png" />
+    <Content Include="img\images\menu-list-bg.png" />
+    <Content Include="img\images\message.png" />
+    <Content Include="img\images\photo.png" />
+    <Content Include="img\images\right.png" />
+    <Content Include="img\images\search-bg.png" />
+    <Content Include="img\images\search-submit.png" />
+    <Content Include="img\l.gif" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\login_fade.png" />
+    <Content Include="img\lxx.gif" />
+    <Content Include="img\news_temp.png" />
+    <Content Include="img\page_nav_03.gif" />
+    <Content Include="img\page_nav_05.gif" />
+    <Content Include="img\page_nav_07.gif" />
+    <Content Include="img\page_nav_09.gif" />
+    <Content Include="img\page_nav_11.gif" />
+    <Content Include="img\r.gif" />
+    <Content Include="img\rxx.gif" />
+    <Content Include="Index.html" />
+    <Content Include="kindeditor-4.1.10\asp.net\bin\LitJSON.dll" />
+    <Content Include="kindeditor-4.1.10\asp.net\demo.aspx" />
+    <Content Include="kindeditor-4.1.10\asp.net\README.txt" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140117\20140117141520_6493.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140121\20140121141031_6459.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140121\20140121142405_2095.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140121\20140121195628_4802.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220010821_4726.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220011307_2393.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220011515_4214.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220012051_9660.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220012325_3525.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140220\20140220012654_8553.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140222\20140222014621_7718.jpg" />
+    <Content Include="kindeditor-4.1.10\attached\image\20140404\20140404003322_5188.jpg" />
+    <Content Include="kindeditor-4.1.10\examples\auto-height.html" />
+    <Content Include="kindeditor-4.1.10\examples\colorpicker.html" />
+    <Content Include="kindeditor-4.1.10\examples\custom-plugin.html" />
+    <Content Include="kindeditor-4.1.10\examples\custom-theme.html" />
+    <Content Include="kindeditor-4.1.10\examples\default.html" />
+    <Content Include="kindeditor-4.1.10\examples\dialog.html" />
+    <Content Include="kindeditor-4.1.10\examples\dynamic-load.html" />
+    <Content Include="kindeditor-4.1.10\examples\file-dialog.html" />
+    <Content Include="kindeditor-4.1.10\examples\file-manager.html" />
+    <Content Include="kindeditor-4.1.10\examples\filter-mode.html" />
+    <Content Include="kindeditor-4.1.10\examples\image-dialog.html" />
+    <Content Include="kindeditor-4.1.10\examples\index.css" />
+    <Content Include="kindeditor-4.1.10\examples\index.html" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui.html" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="kindeditor-4.1.10\examples\jquery-ui\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="kindeditor-4.1.10\examples\jquery.html" />
+    <Content Include="kindeditor-4.1.10\examples\jquery.js" />
+    <Content Include="kindeditor-4.1.10\examples\multi-image-dialog.html" />
+    <Content Include="kindeditor-4.1.10\examples\multi-language.html" />
+    <Content Include="kindeditor-4.1.10\examples\newline.html" />
+    <Content Include="kindeditor-4.1.10\examples\node.html" />
+    <Content Include="kindeditor-4.1.10\examples\paste-type.html" />
+    <Content Include="kindeditor-4.1.10\examples\qqstyle.html" />
+    <Content Include="kindeditor-4.1.10\examples\readonly.html" />
+    <Content Include="kindeditor-4.1.10\examples\simple.html" />
+    <Content Include="kindeditor-4.1.10\examples\uploadbutton.html" />
+    <Content Include="kindeditor-4.1.10\examples\url-type.html" />
+    <Content Include="kindeditor-4.1.10\examples\word-count.html" />
+    <Content Include="kindeditor-4.1.10\kindeditor-all-min.js" />
+    <Content Include="kindeditor-4.1.10\kindeditor-all.js" />
+    <Content Include="kindeditor-4.1.10\kindeditor-min.js" />
+    <Content Include="kindeditor-4.1.10\kindeditor.js" />
+    <Content Include="kindeditor-4.1.10\lang\ar.js" />
+    <Content Include="kindeditor-4.1.10\lang\en.js" />
+    <Content Include="kindeditor-4.1.10\lang\ko.js" />
+    <Content Include="kindeditor-4.1.10\lang\zh_CN.js" />
+    <Content Include="kindeditor-4.1.10\lang\zh_TW.js" />
+    <Content Include="kindeditor-4.1.10\license.txt" />
+    <Content Include="kindeditor-4.1.10\plugins\anchor\anchor.js" />
+    <Content Include="kindeditor-4.1.10\plugins\autoheight\autoheight.js" />
+    <Content Include="kindeditor-4.1.10\plugins\baidumap\baidumap.js" />
+    <Content Include="kindeditor-4.1.10\plugins\baidumap\index.html" />
+    <Content Include="kindeditor-4.1.10\plugins\baidumap\map.html" />
+    <Content Include="kindeditor-4.1.10\plugins\clearhtml\clearhtml.js" />
+    <Content Include="kindeditor-4.1.10\plugins\code\code.js" />
+    <Content Include="kindeditor-4.1.10\plugins\code\prettify.css" />
+    <Content Include="kindeditor-4.1.10\plugins\code\prettify.js" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\emoticons.js" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\0.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\1.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\10.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\100.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\101.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\102.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\103.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\104.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\105.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\106.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\107.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\108.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\109.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\11.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\110.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\111.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\112.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\113.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\114.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\115.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\116.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\117.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\118.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\119.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\12.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\120.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\121.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\122.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\123.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\124.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\125.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\126.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\127.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\128.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\129.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\13.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\130.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\131.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\132.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\133.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\134.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\14.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\15.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\16.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\17.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\18.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\19.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\2.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\20.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\21.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\22.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\23.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\24.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\25.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\26.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\27.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\28.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\29.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\3.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\30.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\31.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\32.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\33.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\34.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\35.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\36.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\37.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\38.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\39.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\4.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\40.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\41.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\42.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\43.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\44.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\45.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\46.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\47.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\48.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\49.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\5.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\50.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\51.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\52.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\53.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\54.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\55.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\56.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\57.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\58.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\59.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\6.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\60.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\61.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\62.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\63.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\64.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\65.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\66.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\67.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\68.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\69.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\7.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\70.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\71.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\72.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\73.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\74.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\75.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\76.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\77.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\78.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\79.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\8.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\80.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\81.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\82.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\83.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\84.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\85.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\86.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\87.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\88.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\89.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\9.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\90.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\91.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\92.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\93.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\94.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\95.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\96.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\97.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\98.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\99.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\emoticons\images\static.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\filemanager.js" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\images\file-16.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\images\file-64.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\filemanager\images\go-up.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\flash\flash.js" />
+    <Content Include="kindeditor-4.1.10\plugins\image\image.js" />
+    <Content Include="kindeditor-4.1.10\plugins\image\images\align_left.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\image\images\align_right.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\image\images\align_top.gif" />
+    <Content Include="kindeditor-4.1.10\plugins\image\images\refresh.png" />
+    <Content Include="kindeditor-4.1.10\plugins\insertfile\insertfile.js" />
+    <Content Include="kindeditor-4.1.10\plugins\lineheight\lineheight.js" />
+    <Content Include="kindeditor-4.1.10\plugins\link\link.js" />
+    <Content Include="kindeditor-4.1.10\plugins\map\map.html" />
+    <Content Include="kindeditor-4.1.10\plugins\map\map.js" />
+    <Content Include="kindeditor-4.1.10\plugins\media\media.js" />
+    <Content Include="kindeditor-4.1.10\plugins\multiimage\images\image.png" />
+    <Content Include="kindeditor-4.1.10\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="kindeditor-4.1.10\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="kindeditor-4.1.10\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="kindeditor-4.1.10\plugins\multiimage\multiimage.js" />
+    <Content Include="kindeditor-4.1.10\plugins\pagebreak\pagebreak.js" />
+    <Content Include="kindeditor-4.1.10\plugins\plainpaste\plainpaste.js" />
+    <Content Include="kindeditor-4.1.10\plugins\preview\preview.js" />
+    <Content Include="kindeditor-4.1.10\plugins\quickformat\quickformat.js" />
+    <Content Include="kindeditor-4.1.10\plugins\table\table.js" />
+    <Content Include="kindeditor-4.1.10\plugins\template\html\1.html" />
+    <Content Include="kindeditor-4.1.10\plugins\template\html\2.html" />
+    <Content Include="kindeditor-4.1.10\plugins\template\html\3.html" />
+    <Content Include="kindeditor-4.1.10\plugins\template\template.js" />
+    <Content Include="kindeditor-4.1.10\plugins\wordpaste\wordpaste.js" />
+    <Content Include="kindeditor-4.1.10\themes\common\anchor.gif" />
+    <Content Include="kindeditor-4.1.10\themes\common\blank.gif" />
+    <Content Include="kindeditor-4.1.10\themes\common\flash.gif" />
+    <Content Include="kindeditor-4.1.10\themes\common\loading.gif" />
+    <Content Include="kindeditor-4.1.10\themes\common\media.gif" />
+    <Content Include="kindeditor-4.1.10\themes\common\rm.gif" />
+    <Content Include="kindeditor-4.1.10\themes\default\background.png" />
+    <Content Include="kindeditor-4.1.10\themes\default\default.css" />
+    <Content Include="kindeditor-4.1.10\themes\default\default.png" />
+    <Content Include="kindeditor-4.1.10\themes\qq\editor.gif" />
+    <Content Include="kindeditor-4.1.10\themes\qq\qq.css" />
+    <Content Include="kindeditor-4.1.10\themes\simple\simple.css" />
+    <Content Include="log4net.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Main\BulletinDetail.aspx" />
+    <Content Include="Main\BulletinList.aspx" />
+    <Content Include="Main\Economydetail.aspx" />
+    <Content Include="Main\Economylist.aspx" />
+    <Content Include="Main\ImageShow.aspx" />
+    <Content Include="Main\Index.aspx" />
+    <Content Include="Main\Lawlist.aspx" />
+    <Content Include="Main\Memberlist.aspx" />
+    <Content Include="Main\NewList.aspx" />
+    <Content Include="Main\Proceedingsdetail.aspx" />
+    <Content Include="Main\Proceedingslist.aspx" />
+    <Content Include="Main\NewsDetail.aspx" />
+    <Content Include="scripts\dateUtil.js" />
+    <Content Include="scripts\functions.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery-1.7.2.min.js" />
+    <Content Include="scripts\jquery-1.8.2.js" />
+    <Content Include="scripts\jquery-1.8.2.min.js" />
+    <Content Include="scripts\jquery-ui-1.8.5.custom.min.js" />
+    <Content Include="scripts\jquery.easing.min.js" />
+    <Content Include="scripts\jquery.pack.js" />
+    <Content Include="scripts\jquery.SuperSlide.js" />
+    <Content Include="scripts\jquery.SuperSlide.source.js" />
+    <Content Include="scripts\jquery.wysiwyg.js" />
+    <Content Include="scripts\move.js" />
+    <Content Include="scripts\My97DatePicker\calendar.js" />
+    <Content Include="scripts\My97DatePicker\config.js" />
+    <Content Include="scripts\My97DatePicker\lang\en.js" />
+    <Content Include="scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="scripts\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="scripts\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="scripts\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="scripts\My97DatePicker\开发包\readme.txt" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="scripts\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="scripts\png_fix.js" />
+    <Content Include="scripts\tinybox.js" />
+    <Content Include="scripts\visualize.jQuery.js" />
+    <Content Include="scripts\web.js" />
+    <Content Include="styles\common.css" />
+    <Content Include="styles\index.css" />
+    <Content Include="styles\indexcss.css" />
+    <Content Include="styles\layout.css" />
+    <Content Include="styles\login.css" />
+    <Content Include="styles\nima.css" />
+    <Content Include="styles\reset.css" />
+    <Content Include="styles\style.css" />
+    <Content Include="styles\wysiwyg.css" />
+    <Content Include="themes\blue\img\bg_buttons.png" />
+    <Content Include="themes\blue\img\bg_buttons_alternative.png" />
+    <Content Include="themes\blue\img\bg_heading_alt.png" />
+    <Content Include="themes\blue\img\bg_login_btn.png" />
+    <Content Include="themes\blue\img\bg_login_input.png" />
+    <Content Include="themes\blue\img\bg_navigation.png" />
+    <Content Include="themes\blue\img\bg_navigation_selected.png" />
+    <Content Include="themes\blue\img\bg_notify_count.png" />
+    <Content Include="themes\blue\img\cp_logo_login.png" />
+    <Content Include="themes\blue\styles.css" />
+    <Content Include="UserControls\PageList.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\addAdmin.aspx.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addAdmin.aspx.designer.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addImage.aspx.cs">
+      <DependentUpon>addImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addImage.aspx.designer.cs">
+      <DependentUpon>addImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addNews.aspx.cs">
+      <DependentUpon>addNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addNews.aspx.designer.cs">
+      <DependentUpon>addNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AdminMasterPage.master.cs">
+      <DependentUpon>AdminMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AdminMasterPage.master.designer.cs">
+      <DependentUpon>AdminMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addMatch.aspx.cs">
+      <DependentUpon>addMatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addMatch.aspx.designer.cs">
+      <DependentUpon>addMatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Matching.aspx.cs">
+      <DependentUpon>Matching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Matching.aspx.designer.cs">
+      <DependentUpon>Matching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ScheduleList.aspx.cs">
+      <DependentUpon>ScheduleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ScheduleList.aspx.designer.cs">
+      <DependentUpon>ScheduleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\selectdAdmin.aspx.cs">
+      <DependentUpon>selectdAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\selectdAdmin.aspx.designer.cs">
+      <DependentUpon>selectdAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\selectedNews.aspx.cs">
+      <DependentUpon>selectedNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\selectedNews.aspx.designer.cs">
+      <DependentUpon>selectedNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\selectImage.aspx.cs">
+      <DependentUpon>selectImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\selectImage.aspx.designer.cs">
+      <DependentUpon>selectImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\selectLaboratory.aspx.cs">
+      <DependentUpon>selectLaboratory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\selectLaboratory.aspx.designer.cs">
+      <DependentUpon>selectLaboratory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UpdateAdmin.aspx.cs">
+      <DependentUpon>UpdateAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UpdateAdmin.aspx.designer.cs">
+      <DependentUpon>UpdateAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UpdateNews.aspx.cs">
+      <DependentUpon>UpdateNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UpdateNews.aspx.designer.cs">
+      <DependentUpon>UpdateNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addLaboratory.aspx.cs">
+      <DependentUpon>addLaboratory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addLaboratory.aspx.designer.cs">
+      <DependentUpon>addLaboratory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\addSchedule.aspx.cs">
+      <DependentUpon>addSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\addSchedule.aspx.designer.cs">
+      <DependentUpon>addSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MatchList.aspx.cs">
+      <DependentUpon>MatchList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MatchList.aspx.designer.cs">
+      <DependentUpon>MatchList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main\BulletinDetail.aspx.cs">
+      <DependentUpon>BulletinDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\BulletinDetail.aspx.designer.cs">
+      <DependentUpon>BulletinDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\BulletinList.aspx.cs">
+      <DependentUpon>BulletinList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\BulletinList.aspx.designer.cs">
+      <DependentUpon>BulletinList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Economydetail.aspx.cs">
+      <DependentUpon>Economydetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Economydetail.aspx.designer.cs">
+      <DependentUpon>Economydetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Economylist.aspx.cs">
+      <DependentUpon>Economylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Economylist.aspx.designer.cs">
+      <DependentUpon>Economylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ImageShow.aspx.cs">
+      <DependentUpon>ImageShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\ImageShow.aspx.designer.cs">
+      <DependentUpon>ImageShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Lawlist.aspx.cs">
+      <DependentUpon>Lawlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Lawlist.aspx.designer.cs">
+      <DependentUpon>Lawlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Memberlist.aspx.cs">
+      <DependentUpon>Memberlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Memberlist.aspx.designer.cs">
+      <DependentUpon>Memberlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\NewList.aspx.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\NewList.aspx.designer.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Proceedingsdetail.aspx.cs">
+      <DependentUpon>Proceedingsdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Proceedingsdetail.aspx.designer.cs">
+      <DependentUpon>Proceedingsdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Proceedingslist.aspx.cs">
+      <DependentUpon>Proceedingslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Proceedingslist.aspx.designer.cs">
+      <DependentUpon>Proceedingslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\PageList.ascx.cs">
+      <DependentUpon>PageList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageList.ascx.designer.cs">
+      <DependentUpon>PageList.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="img\UploadFile\" />
+    <Folder Include="UpLoad\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bll\Bll.csproj">
+      <Project>{9C39CB8A-A66E-49EE-8557-964802EFE406}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D77F4560-4D4F-4DE9-8E57-DA5E603E4285}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{FBB6127E-1B3F-44F6-9672-77681B73E303}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dal\Dal.csproj">
+      <Project>{BC09737D-E015-4BCE-99AD-120625048DAD}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{7C1FEBBE-D3D0-4CD5-AD9F-05D25036ACAA}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kindeditor-4.1.10\asp.net\file_manager_json.ashx" />
+    <Content Include="kindeditor-4.1.10\asp.net\upload_json.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AdminMasterPage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main\MasterPage.master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13886</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
